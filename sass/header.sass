@@ -1,0 +1,44 @@
+@import bourbon
+@import fonts.sass
+@import vars.sass
+
+$main-color: #F39F18
+$headers-color: #2c3949
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: em(22px)
+	font-family: "RalewayRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+a, a:hover, a:focus, a:active
+	color: $main-color
+	text-decoration: underline
+	font-weight: normal
+	color: $headers-color
+
+.headers
+		font-family: "PFCentroSlabProMedium", $helvetica
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+
+h1 
+	font-size: em(48px)
+	text-transform: none
+
+h2 
+	font-size: em(30px)
+	text-transform: none
+
+h3 
+	font-size: em(24px)
+	text-transform: none
+
+b, strong
+	font-family: "RalewayBold", $helvetica
