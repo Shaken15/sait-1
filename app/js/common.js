@@ -1,5 +1,9 @@
 $(function() {
 
+	$(".toggle-mnu").click(function(){
+		$(this).toggleClass("on");
+		$(".main-mnu").slideToggle();
+	})
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -8,7 +12,7 @@ $(function() {
 	};
 
 	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
+	//Documentation & Examp.pipe(gulp.dest('folder'));le: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
